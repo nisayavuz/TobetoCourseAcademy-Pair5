@@ -24,8 +24,14 @@ namespace Business.Concretes
 
         public IDataResult<List<CourseDetailDto>> GetCourseDetails()
         {
+            if (DateTime.Now.Hour == 11)
+            {
+                return new ErrorDataResult<List<CourseDetailDto>>(Messages.ErrorMessage);
+            }
+
             return new SuccesDataResult<List<CourseDetailDto>> (_courseDal.GetCourseDetails() , Messages.CourseListed);
 
+     
         }
     }
 }

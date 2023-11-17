@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,7 @@ namespace Business.Constans
         public static string CategoryAdded = "Kategori eklendi.";
 
         public static string CourseListed = "Kurs detayları listelendi.";
+
+        public static string ErrorMessage = "Sistem bakımda.";
     }
 }

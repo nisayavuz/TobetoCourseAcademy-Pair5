@@ -20,11 +20,7 @@ class Program
     {
         CourseManager courseManager =  new CourseManager(new EfCourseDal());
 
-        foreach (var courses in courseManager.GetCourseDetails().Message)
-        {
-            Console.WriteLine(courseManager.GetCourseDetails().IsSuccess);
-
-        }
+        Console.WriteLine(courseManager.GetCourseDetails().Message);
 
 
 
